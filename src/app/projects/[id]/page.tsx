@@ -3,7 +3,18 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { PROJECTS } from "@/app/data/projects";
 
-export default function ProjectDetail({ params }: { params: { id: string } }) {
+type PageProps = {
+    params: { id: string };
+    searchParams?: { [key: string]: string | string[] | undefined };
+}
+
+// Or alternatively:
+// interface PageProps {
+//   params: { id: string };
+//   searchParams?: Record<string, string | string[] | undefined>;
+// }
+
+export default function ProjectDetail({ params }: PageProps) {
     const project = PROJECTS.find(p => p.id === params.id);
 
     if (!project) {

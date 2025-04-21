@@ -1,7 +1,9 @@
 // next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Remove the experimental.appDir setting as it's now the default in Next.js 15
+  experimental: {
+    appDir: true,
+  },
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,

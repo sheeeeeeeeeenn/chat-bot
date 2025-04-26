@@ -2,17 +2,13 @@ Next.js App
 
 This is a Next.js project bootstrapped with create-next-app.
 
+Developed by: Shenmar Bonifacio
+
 🚀 Getting Started
 
 Start the development server:
 
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 
 Open http://localhost:3000 in your browser to view the app.
 
